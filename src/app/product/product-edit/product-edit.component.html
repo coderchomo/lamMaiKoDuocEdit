@@ -1,0 +1,9 @@
+<h1>Edt Product</h1>
+<button routerLink="/product/list">List</button>
+
+<form (ngSubmit)="editProduct()">
+  <input type="text" [(ngModel)]="product.name" name="name" id="name" placeholder="name"><br><br>
+  <input type="text" [(ngModel)]="product.price" name="price" id="price" placeholder="price"><br><br>
+  <input type="text" [(ngModel)]="product.description" name="description" id="description" placeholder="description"><br><br>
+  <button type="submit">edit</button>
+</form>
